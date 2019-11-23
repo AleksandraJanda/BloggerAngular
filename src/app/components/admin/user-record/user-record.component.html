@@ -1,0 +1,7 @@
+<div class="row user-box text-center">
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">{{ user.id }}</div>
+  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">{{ user.name }}</div>
+  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 font-italic">{{ user.username }}</div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-5 col-5 btn btn-success">See</div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-5 col-5 btn btn-danger" (click)="onDelete(user)">Delete</div>
+</div>
