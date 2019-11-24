@@ -6,9 +6,10 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { UserPostsComponent } from './user-posts/user-posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
-import { PostComponent } from '../post/post.component';
-import { CommentComponent } from '../comment/comment.component';
-import { TodoComponent } from '../todo/todo.component';
+import { PostComponent } from './post/post.component';
+import { CommentComponent } from './comment/comment.component';
+import { TodoComponent } from './todo/todo.component';
+import { UserTodosComponent } from './user-todos/user-todos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TodoComponent } from '../todo/todo.component';
     UserPostsComponent,
     PostComponent,
     CommentComponent,
-    TodoComponent
+    TodoComponent,
+    UserTodosComponent
   ],
   imports: [
     CommonModule,

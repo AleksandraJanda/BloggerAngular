@@ -1,0 +1,13 @@
+<div class="post-box">
+    <div class="col-12 font-weight-bold text-justify">{{ post.title }}</div>
+    <div class="col-12 text-justify">{{ post.body }}</div>
+    <div class="col-12 d-flex justify-content-end font-italic">{{ username }}</div>
+    <div class="col-12">
+            <a href="#List-{{ i }}" class="btn btn-danger" data-toggle="collapse">Comments</a>
+        <div class="collapse" id="List-{{ i }}">
+            <div class="card card-body">
+                <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
+            </div>
+        </div>
+    </div>
+</div>
