@@ -9,6 +9,11 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => import('./components/admin/admin.module').then(mod => mod.AdminModule),
     data: { preload: true },
+  },
+  {
+    path: 'profile/:id',
+    loadChildren: () => import('./components/profile/profile.module').then(mod => mod.ProfileModule),
+    data: { preload: true },
   }
 ];
 

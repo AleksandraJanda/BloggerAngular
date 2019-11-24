@@ -20,4 +20,8 @@ export class UserRecordComponent implements OnInit {
     this.deleteUser.emit(user);
   }
 
+  onSee(user) {
+    console.log('go to user' + user.id);
+  }
+
 }
